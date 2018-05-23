@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Led, LedPlaceHolder } from './Led';
+import StatusBar from '../../StatusBar';
 
 class ListScreen extends React.Component {
     render() {
         return (
             <View style={styles.container}>
+                <StatusBar message={this.props.screenProps.message} />
                 <Led led={this.props.leds[0]} handleLed={this.props.handleLed} text='Zimmer I' />
                 <Led led={this.props.leds[1]} handleLed={this.props.handleLed} text='Wohnen' />
                 <Led led={this.props.leds[2]} handleLed={this.props.handleLed} text='Zimmer II' />
@@ -21,6 +23,11 @@ export default ListScreen;
 
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
+        flexDirection: 'column',
+        backgroundColor: 'grey'
+    },
+    leds: {
         flex: 1,
         flexDirection: 'row',
         flexWrap: 'wrap',

@@ -2,6 +2,7 @@ import React from 'react';
 import { View, StyleSheet, Image, Dimensions } from 'react-native';
 import Light from './Light';
 import Images from '@assets/images';
+import StatusBar from '../../StatusBar';
 
 class MapScreen extends React.Component {
   render() {
@@ -10,6 +11,7 @@ class MapScreen extends React.Component {
     const cWidth = width / 2;
     return (
       <View style={styles.container}>
+          <StatusBar message={this.props.screenProps.message} />
         <Image
           style={{ height: height, width: width }}
           resizeMode='contain'

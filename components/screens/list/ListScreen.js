@@ -8,11 +8,11 @@ class ListScreen extends React.Component {
         return (
             <View style={styles.container}>
                 <StatusBar message={this.props.screenProps.message} />
-                <Led led={this.props.leds[0]} handleLed={this.props.handleLed} text='Zimmer I' />
-                <Led led={this.props.leds[1]} handleLed={this.props.handleLed} text='Wohnen' />
-                <Led led={this.props.leds[2]} handleLed={this.props.handleLed} text='Zimmer II' />
-                <Led led={this.props.leds[3]} handleLed={this.props.handleLed} text='Zimmer III' />
-                <Led led={this.props.leds[4]} handleLed={this.props.handleLed} text='Diele' />
+                <Led led={this.props.screenProps.leds[0]} handleLed={this.props.screenProps.handleLed} text='Zimmer I' />
+                <Led led={this.props.screenProps.leds[1]} handleLed={this.props.screenProps.handleLed} text='Wohnen' />
+                <Led led={this.props.screenProps.leds[2]} handleLed={this.props.screenProps.handleLed} text='Zimmer II' />
+                <Led led={this.props.screenProps.leds[3]} handleLed={this.props.screenProps.handleLed} text='Zimmer III' />
+                <Led led={this.props.screenProps.leds[4]} handleLed={this.props.screenProps.handleLed} text='Diele' />
                 <LedPlaceHolder />
             </View>
         )

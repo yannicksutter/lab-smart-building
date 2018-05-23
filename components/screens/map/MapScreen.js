@@ -17,11 +17,11 @@ class MapScreen extends React.Component {
           resizeMode='contain'
           source={Images.Floor}
         />
-        <Light led={this.props.leds[0]} fromTop={cHeight - 150} fromLeft={cWidth - 100} handleLed={this.props.handleLed} />
-        <Light led={this.props.leds[1]} fromTop={cHeight - 50} fromLeft={cWidth - 110} handleLed={this.props.handleLed} />
-        <Light led={this.props.leds[2]} fromTop={cHeight + 70} fromLeft={cWidth - 130} handleLed={this.props.handleLed} />
-        <Light led={this.props.leds[3]} fromTop={cHeight + 40} fromLeft={cWidth + 90} handleLed={this.props.handleLed} />
-        <Light led={this.props.leds[4]} fromTop={cHeight - 55} fromLeft={cWidth + 50} handleLed={this.props.handleLed} />
+          <Light led={this.props.screenProps.leds[0]} fromTop={cHeight - 150} fromLeft={cWidth - 100} handleLed={this.props.screenProps.handleLed} />
+          <Light led={this.props.screenProps.leds[1]} fromTop={cHeight - 50} fromLeft={cWidth - 110} handleLed={this.props.screenProps.handleLed} />
+          <Light led={this.props.screenProps.leds[2]} fromTop={cHeight + 70} fromLeft={cWidth - 130} handleLed={this.props.screenProps.handleLed} />
+          <Light led={this.props.screenProps.leds[3]} fromTop={cHeight + 40} fromLeft={cWidth + 90} handleLed={this.props.screenProps.handleLed} />
+          <Light led={this.props.screenProps.leds[4]} fromTop={cHeight - 55} fromLeft={cWidth + 50} handleLed={this.props.screenProps.handleLed} />
       </View>
     )
   }
